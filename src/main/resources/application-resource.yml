@@ -1,0 +1,17 @@
+#网络信息*****************************************************************************************************************
+server:
+  port: ${PORT:50301} #端口号
+  #  servlet:
+  #    context-path: /oauth
+  max-http-header-size: 102400
+spring:
+  application:
+    name: Resource
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    database: mysql
+  main:
+    allow-bean-definition-overriding: true #运行spring Bean名称重复
